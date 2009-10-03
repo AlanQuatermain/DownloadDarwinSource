@@ -1,0 +1,19 @@
+h2. Darwin Source Downloader
+
+This is an Automator workflow which can automatically fetch all the Darwin source projects from "Apple's open-source repository":http://opensource.apple.com and extract them to a designated folder on your computer.
+
+h3. Prerequisites
+
+You must build and install the "Untar Action":http://github.com/AlanQuatermain/UntarAction to use this workflow. Alternatively, you can replace that action with 'Open Finder Items', but you'll end up with 314 Finder windows opened after extraction.
+
+h3. Instructions
+
+1. The workflow will first ask you to specify an output folder. As an example, I have an 'APSL' folder on my Development drive, in which I create a folder named '10.6.1' or similar, and I select that folder.
+2. Next it will open http://opensource.apple.com/ in your browser, and will pop up a dialog asking you to follow the link to the version of the source you want to download. To continue with the above example, you'd click the '10.6.1' link under the 'Mac OS X' header. Once this is done, click Continue in the dialog.
+3. The workflow will now download all .tar.gz files to the folder you specified in step 1.
+4. Once all files are downloaded, it will extract each archive (when using the recomended "Untar Action":http://github.com/AlanQuatermain/UntarAction this will be parallelized using Grand Central Dispatch).
+5. Lastly, any tarfiles whose contents were successfully extracted will be moved to the Trash.
+
+h3. Limitations
+
+At present there is no user interface displaying any form of feedback on either the download or untar steps. The only way to monitor progress is to watch the output folder in the Finder. For reference, there are 314 tar files in the 10.6.1 source download.
