@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>246</string>
+	<string>329</string>
 	<key>AMApplicationVersion</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -21,11 +21,15 @@
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>v.1.1</string>
+				<string>v.1.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>defaultLocation</key>
@@ -57,7 +61,7 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.alias-object</string>
+						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
@@ -75,14 +79,23 @@
 					<key>promptMessage</key>
 					<string>Choose or create a folder to which to download the Darwin source:</string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Finder</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>defaultLocation</key>
+					<string>/Users/jim</string>
+					<key>granularity</key>
+					<integer>1</integer>
+					<key>multipleSelection</key>
+					<false/>
+					<key>promptMessage</key>
+					<string>Choose or create a folder to which to download the Darwin source:</string>
+					<key>temporary items path</key>
+					<string>/var/folders/22/kb_xwxhj1jq1shjx5x0g2xsh0000gn/T/C5D7FFA7-B6CD-481C-BBEF-3FC246D841A9/1/com.apple.Automator.AskForFinderItems</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AskForFinderItems</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>1.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -92,7 +105,7 @@
 					<string>AMCategoryFilesAndFolders</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMAppleScriptAction</string>
+				<string>AMAskForFinderItemsAction</string>
 				<key>InputUUID</key>
 				<string>BFE06995-F079-4803-BA34-1FA93C76A06A</string>
 				<key>Keywords</key>
@@ -171,7 +184,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:1384.000000</string>
+				<string>309.500000:1257.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -193,7 +206,11 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>v.1.0</string>
+				<string>v.1.0.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>variableUUID</key>
@@ -224,14 +241,17 @@
 					<key>variableUUID</key>
 					<string>6977D22B-0EB9-4F66-B08A-56E82C2F98D7</string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Automator</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>temporary items path</key>
+					<string>/var/folders/22/kb_xwxhj1jq1shjx5x0g2xsh0000gn/T/C5D7FFA7-B6CD-481C-BBEF-3FC246D841A9/1/com.apple.Automator.Set_Value_of_Variable</string>
+					<key>variableUUID</key>
+					<string>6977D22B-0EB9-4F66-B08A-56E82C2F98D7</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Set_Value_of_Variable</string>
 				<key>CFBundleVersion</key>
-				<string>1.0</string>
+				<string>1.0.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -279,7 +299,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:1229.000000</string>
+				<string>309.500000:1102.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -297,11 +317,15 @@
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.url-object</string>
+						<string>com.apple.cocoa.url</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.1</string>
+				<string>2.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>URLlist</key>
@@ -313,7 +337,7 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.url-object</string>
+						<string>com.apple.cocoa.url</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
@@ -331,14 +355,23 @@
 						</array>
 					</array>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>URLlist</key>
+					<array>
+						<array>
+							<true/>
+							<string>Open Source - Releases</string>
+							<string>http://www.opensource.apple.com/</string>
+						</array>
+					</array>
+					<key>temporary items path</key>
+					<string>/var/folders/22/kb_xwxhj1jq1shjx5x0g2xsh0000gn/T/C5D7FFA7-B6CD-481C-BBEF-3FC246D841A9/1/com.apple.Automator.URLList</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.URLList</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>2.0</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -348,7 +381,7 @@
 					<string>AMCategoryInternet</string>
 				</array>
 				<key>Class Name</key>
-				<string>URLList</string>
+				<string>AMURLListAction</string>
 				<key>IgnoresInput</key>
 				<true/>
 				<key>InputUUID</key>
@@ -386,7 +419,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:1124.000000</string>
+				<string>309.500000:997.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified URLs.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -408,166 +441,105 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0</string>
+				<string>2.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
 				<key>AMParameterProperties</key>
-				<dict/>
+				<dict>
+					<key>outputTypeTag</key>
+					<dict/>
+					<key>positionTag</key>
+					<dict/>
+					<key>sizeFormatTag</key>
+					<dict/>
+					<key>targetSizeX</key>
+					<dict/>
+					<key>targetSizeY</key>
+					<dict/>
+					<key>userAgentTag</key>
+					<dict/>
+				</dict>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.url</string>
+						<string>com.apple.cocoa.string</string>
 					</array>
 				</dict>
-				<key>AMRequiredResources</key>
-				<array/>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Display Webpages 2.action</string>
+				<string>/System/Library/Automator/Website Popup.action</string>
 				<key>ActionName</key>
-				<string>Display Webpages</string>
+				<string>Website Popup</string>
 				<key>ActionParameters</key>
-				<dict/>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
+				<dict>
+					<key>outputTypeTag</key>
+					<integer>3</integer>
+					<key>positionTag</key>
+					<string>0</string>
+					<key>sizeFormatTag</key>
+					<integer>0</integer>
+					<key>targetSizeX</key>
+					<real>1280</real>
+					<key>targetSizeY</key>
+					<real>1024</real>
+					<key>userAgentTag</key>
+					<integer>0</integer>
+				</dict>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>outputTypeTag</key>
+					<integer>3</integer>
+					<key>positionTag</key>
+					<string>0</string>
+					<key>sizeFormatTag</key>
+					<integer>0</integer>
+					<key>targetSizeX</key>
+					<real>1280</real>
+					<key>targetSizeY</key>
+					<real>1024</real>
+					<key>temporary items path</key>
+					<string>/var/folders/22/kb_xwxhj1jq1shjx5x0g2xsh0000gn/T/C5D7FFA7-B6CD-481C-BBEF-3FC246D841A9/1/com.apple.Automator.Website_Popup</string>
+					<key>userAgentTag</key>
+					<integer>0</integer>
+				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Display_Webpages</string>
+				<string>com.apple.Automator.Website_Popup</string>
 				<key>CFBundleVersion</key>
-				<string>1.0</string>
+				<string>2.0</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
-				<false/>
+				<true/>
 				<key>Category</key>
 				<array>
 					<string>AMCategoryInternet</string>
 				</array>
 				<key>Class Name</key>
-				<string>Display_Webpages</string>
+				<string>AMWebsitePoppupAction</string>
 				<key>InputUUID</key>
-				<string>D21D7EB6-20FF-4E71-90AB-B08D2BE9DC0B</string>
+				<string>16DDEFA9-48C8-4221-8E40-20130F38EF2F</string>
 				<key>Keywords</key>
-				<array>
-					<string>URL</string>
-					<string>Web</string>
-					<string>Display</string>
-					<string>Open</string>
-					<string>Show</string>
-				</array>
+				<array/>
 				<key>OutputUUID</key>
-				<string>1821386E-EDDA-48C4-B2D6-FB4F4B9C3BA2</string>
+				<string>2EFC5A04-62A2-4C4D-9F72-16DD018E9C58</string>
 				<key>UUID</key>
-				<string>8E444271-EE2E-4CAE-ADDC-F1E0D3F70029</string>
+				<string>C936AFEE-ECFB-406D-8EFB-A6817562D555</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Safari</string>
-				</array>
-				<key>arguments</key>
-				<dict/>
-			</dict>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array/>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.0</string>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>affirmativeTitle</key>
-					<dict/>
-					<key>displayWarning</key>
-					<dict/>
-					<key>explanationText</key>
-					<dict/>
-					<key>negativeTitle</key>
-					<dict/>
-					<key>questionText</key>
-					<dict>
-						<key>tokenizedValue</key>
-						<array>
-							<string>Choose Source Version</string>
-						</array>
-					</dict>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array/>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Ask for Confirmation.action</string>
-				<key>ActionName</key>
-				<string>Ask for Confirmation</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>affirmativeTitle</key>
-					<string>Continue</string>
-					<key>displayWarning</key>
-					<false/>
-					<key>explanationText</key>
-					<string>Select the link for the source bundle you wish to download on the opened page. For instance, to download source for Mac OS X 10.6.1 click the '10.6.1' link under the 'Mac OS X' header.</string>
-					<key>negativeTitle</key>
-					<string>Stop</string>
-					<key>questionText</key>
-					<string>Choose Source Version</string>
-				</dict>
-				<key>Application</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Ask for Confirmation</string>
-				<key>CFBundleVersion</key>
-				<string>1.0</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
-				<key>CanShowWhenRun</key>
-				<false/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>AMAppleScriptAction</string>
-				<key>InputUUID</key>
-				<string>D327CB1C-1654-4483-AB70-ADB02349CC05</string>
-				<key>Keywords</key>
-				<array>
-					<string>Message</string>
-					<string>Ask</string>
-					<string>Display</string>
-					<string>Prompt</string>
-					<string>Show</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>00683F07-F2C6-4F29-A8AE-9179FC16720F</string>
-				<key>UUID</key>
-				<string>160C0A5E-EA5B-494E-ACC2-D5CAE268EB0D</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Automator</string>
 				</array>
 				<key>arguments</key>
 				<dict>
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>questionText</string>
+						<string>userAgentTag</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -578,9 +550,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string>0</string>
 						<key>name</key>
-						<string>displayWarning</string>
+						<string>positionTag</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -591,9 +563,9 @@
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>explanationText</string>
+						<string>sizeFormatTag</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -604,9 +576,9 @@
 					<key>3</key>
 					<dict>
 						<key>default value</key>
-						<string>OK</string>
+						<string>0.0</string>
 						<key>name</key>
-						<string>affirmativeTitle</string>
+						<string>targetSizeY</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -617,9 +589,9 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<string>Cancel</string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>negativeTitle</string>
+						<string>outputTypeTag</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -627,78 +599,31 @@
 						<key>uuid</key>
 						<string>4</string>
 					</dict>
+					<key>5</key>
+					<dict>
+						<key>default value</key>
+						<string>0.0</string>
+						<key>name</key>
+						<string>targetSizeX</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>5</string>
+					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:832.000000</string>
+				<string>309.500000:771.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Website Popup.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMActionVersion</key>
-				<string>1.0</string>
-				<key>AMParameterProperties</key>
-				<dict/>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.url-object</string>
-					</array>
-				</dict>
-				<key>AMRequiredResources</key>
-				<array/>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Get Current Webpage from Safari.action</string>
-				<key>ActionName</key>
-				<string>Get Current Webpage from Safari</string>
-				<key>ActionParameters</key>
-				<dict/>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
-				<key>BundleIdentifier</key>
-				<string>com.apple.GetURLofFrontSafariWindow</string>
-				<key>CFBundleVersion</key>
-				<string>1.0</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
-				<key>CanShowWhenRun</key>
-				<false/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryInternet</string>
-				</array>
-				<key>Class Name</key>
-				<string>AMAppleScriptAction</string>
-				<key>Keywords</key>
-				<array>
-					<string>Web</string>
-					<string>Get</string>
-					<string>URL</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>A23271FE-AB83-4B25-A152-531635E198E2</string>
-				<key>UUID</key>
-				<string>484E4DA3-12BE-401A-99F6-36750822E3B4</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Safari</string>
-				</array>
-				<key>arguments</key>
-				<dict/>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Current Webpage from Safari.action/Contents/Resources/English.lproj/main.nib</string>
-			</dict>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -716,6 +641,10 @@
 				</dict>
 				<key>AMActionVersion</key>
 				<string>1.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>localOnly</key>
@@ -741,10 +670,13 @@
 					<key>localOnly</key>
 					<true/>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>localOnly</key>
+					<true/>
+					<key>temporary items path</key>
+					<string>/var/folders/22/kb_xwxhj1jq1shjx5x0g2xsh0000gn/T/C5D7FFA7-B6CD-481C-BBEF-3FC246D841A9/1/com.apple.Automator.GetLinkURLsFromWebpages</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.GetLinkURLsFromWebpages</string>
 				<key>CFBundleVersion</key>
@@ -758,7 +690,7 @@
 					<string>AMCategoryInternet</string>
 				</array>
 				<key>Class Name</key>
-				<string>GetLinkURLsClass</string>
+				<string>AMGetLinkURLsAction</string>
 				<key>InputUUID</key>
 				<string>0E34F5EA-09B6-4A73-ADA0-DE651D0FE6C9</string>
 				<key>Keywords</key>
@@ -790,7 +722,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:569.000000</string>
+				<string>309.500000:623.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Link URLs from Webpages.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -812,7 +744,11 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.0</string>
+				<string>2.0.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>predicate</key>
@@ -892,14 +828,71 @@
 					AAAAAAR+
 					</data>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>predicate</key>
+					<data>
+					YnBsaXN0MDDUAQIDBAUGbm9YJHZlcnNpb25Y
+					JG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGG
+					oK8QFgcIDxQcJicpMTU6O0BESk9QVVxiZ2lV
+					JG51bGzTCQoLDA0OXxAPTlNTdWJwcmVkaWNh
+					dGVzXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5
+					cGVWJGNsYXNzgAIQAYAV0gsQERJaTlMub2Jq
+					ZWN0c4AUoROAA9QVFgsXGBkaG18QEE5TTGVm
+					dEV4cHJlc3Npb25fEBFOU1JpZ2h0RXhwcmVz
+					c2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KA
+					BIAOgBOAEdUdHgsfICEiIyQlXxAQTlNFeHBy
+					ZXNzaW9uVHlwZV5OU1NlbGVjdG9yTmFtZVlO
+					U09wZXJhbmRbTlNBcmd1bWVudHMQA4AFgA2A
+					BoAIXHZhbHVlRm9yS2V5OtIdCw0ogAfSKiss
+					LVokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNT
+					ZWxmRXhwcmVzc2lvbqMuLzBfEBBOU1NlbGZF
+					eHByZXNzaW9uXE5TRXhwcmVzc2lvblhOU09i
+					amVjdNILEDIzgAyhNIAJ0zYdCzc4OVlOU0tl
+					eVBhdGiAChAKgAtUcGF0aNIqKzw9XxAcTlNL
+					ZXlQYXRoU3BlY2lmaWVyRXhwcmVzc2lvbqM+
+					PzBfEBxOU0tleVBhdGhTcGVjaWZpZXJFeHBy
+					ZXNzaW9uXE5TRXhwcmVzc2lvbtIqK0FCXk5T
+					TXV0YWJsZUFycmF5o0FDMFdOU0FycmF50ior
+					RUZfEBNOU0tleVBhdGhFeHByZXNzaW9upEdI
+					STBfEBNOU0tleVBhdGhFeHByZXNzaW9uXxAU
+					TlNGdW5jdGlvbkV4cHJlc3Npb25cTlNFeHBy
+					ZXNzaW9u0x1LC0xNTl8QD05TQ29uc3RhbnRW
+					YWx1ZRAAgA+AEFcudGFyLmd60iorUVJfEBlO
+					U0NvbnN0YW50VmFsdWVFeHByZXNzaW9uo1NU
+					MF8QGU5TQ29uc3RhbnRWYWx1ZUV4cHJlc3Np
+					b25cTlNFeHByZXNzaW9u1VZXWAtZWg1MWyFe
+					TlNPcGVyYXRvclR5cGVaTlNQb3NpdGlvblpO
+					U01vZGlmaWVyV05TRmxhZ3MQCYAS0iorXV5f
+					EBxOU1N1YnN0cmluZ1ByZWRpY2F0ZU9wZXJh
+					dG9ypF9gYTBfEBxOU1N1YnN0cmluZ1ByZWRp
+					Y2F0ZU9wZXJhdG9yXxAZTlNTdHJpbmdQcmVk
+					aWNhdGVPcGVyYXRvcl8QE05TUHJlZGljYXRl
+					T3BlcmF0b3LSKitjZF8QFU5TQ29tcGFyaXNv
+					blByZWRpY2F0ZaNlZjBfEBVOU0NvbXBhcmlz
+					b25QcmVkaWNhdGVbTlNQcmVkaWNhdGXSKitD
+					aKJDMNIqK2prXxATTlNDb21wb3VuZFByZWRp
+					Y2F0ZaNsbTBfEBNOU0NvbXBvdW5kUHJlZGlj
+					YXRlW05TUHJlZGljYXRlXxAPTlNLZXllZEFy
+					Y2hpdmVy0XBxVHJvb3SAAQAIABEAGgAjAC0A
+					MgA3AFAAVgBdAG8AiQCQAJIAlACWAJsApgCo
+					AKoArAC1AMgA3ADyAPQA9gD4APoBBQEYAScB
+					MQE9AT8BQQFDAUUBRwFUAVkBWwFgAWsBdAGH
+					AYsBngGrAbQBuQG7Ab0BvwHGAdAB0gHUAdYB
+					2wHgAf8CAwIiAi8CNAJDAkcCTwJUAmoCbwKF
+					ApwCqQKwAsICxALGAsgC0ALVAvEC9QMRAx4D
+					KQM4A0MDTgNWA1gDWgNfA34DgwOiA74D1APZ
+					A/ED9QQNBBkEHgQhBCYEPARABFYEYgR0BHcE
+					fAAAAAAAAAIBAAAAAAAAAHIAAAAAAAAAAAAA
+					AAAAAAR+
+					</data>
+					<key>temporary items path</key>
+					<string>/var/folders/22/kb_xwxhj1jq1shjx5x0g2xsh0000gn/T/C5D7FFA7-B6CD-481C-BBEF-3FC246D841A9/1/com.apple.Automator.Filter_URLs_2</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Filter_URLs_2</string>
 				<key>CFBundleVersion</key>
-				<string>2.0</string>
+				<string>2.0.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -942,7 +935,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:469.000000</string>
+				<string>309.500000:523.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Filter URLs 2.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -964,7 +957,11 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>v.1.1</string>
+				<string>v.1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>destinationPath</key>
@@ -997,14 +994,17 @@
 					<key>destinationPath</key>
 					<string>6977D22B-0EB9-4F66-B08A-56E82C2F98D7</string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>destinationPath</key>
+					<string>/Volumes/APSL Source/10.7</string>
+					<key>temporary items path</key>
+					<string>/var/folders/22/kb_xwxhj1jq1shjx5x0g2xsh0000gn/T/C5D7FFA7-B6CD-481C-BBEF-3FC246D841A9/1/com.apple.Automator.DownloadInternetFile</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.DownloadInternetFile</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -1052,7 +1052,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:245.000000</string>
+				<string>309.500000:299.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Download URLs.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1075,6 +1075,8 @@
 				</dict>
 				<key>AMActionVersion</key>
 				<string>1.0</string>
+				<key>AMApplication</key>
+				<array/>
 				<key>AMParameterProperties</key>
 				<dict/>
 				<key>AMProvides</key>
@@ -1095,8 +1097,6 @@
 				<string>Untar</string>
 				<key>ActionParameters</key>
 				<dict/>
-				<key>Application</key>
-				<array/>
 				<key>BundleIdentifier</key>
 				<string>com.yourcompany.Automator.Untar</string>
 				<key>CFBundleVersion</key>
@@ -1121,7 +1121,15 @@
 				<string>FA1F63D5-F57F-4226-A86E-C38ECE62C3EE</string>
 				<key>arguments</key>
 				<dict/>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>309.500000:196.000000</string>
+				<key>nibPath</key>
+				<string>/Users/jim/Library/Automator/Untar.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
+			<key>isViewVisible</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -1138,7 +1146,11 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.1</string>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict/>
 				<key>ActionBundlePath</key>
@@ -1147,14 +1159,10 @@
 				<string>Move Finder Items to Trash</string>
 				<key>ActionParameters</key>
 				<dict/>
-				<key>Application</key>
-				<array>
-					<string>Finder</string>
-				</array>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.MoveToTrash</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -1189,73 +1197,61 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0B72D37F-8C95-43F0-BE77-E68A7A9890FA</key>
+		<key>1BDBC3F1-ACA9-4225-97E3-8BEC739D4EB8</key>
 		<dict>
 			<key>from</key>
 			<string>C04D84D6-18D4-4A29-8090-1DE10CB0132B - C04D84D6-18D4-4A29-8090-1DE10CB0132B</string>
 			<key>to</key>
 			<string>FD858ACD-27EE-4B0A-AC42-15C8B2B83724 - FD858ACD-27EE-4B0A-AC42-15C8B2B83724</string>
 		</dict>
-		<key>290E2FB1-F6B8-45D6-A8DE-9417CAE7701E</key>
+		<key>1DE585A0-BE5A-47F1-A475-D7B907B9F8B2</key>
+		<dict>
+			<key>from</key>
+			<string>709FE5CB-C4FE-4DC1-AC34-46EE1CE9BD63 - 709FE5CB-C4FE-4DC1-AC34-46EE1CE9BD63</string>
+			<key>to</key>
+			<string>C936AFEE-ECFB-406D-8EFB-A6817562D555 - C936AFEE-ECFB-406D-8EFB-A6817562D555</string>
+		</dict>
+		<key>395FEC33-0946-4BA1-B102-991664DC45DD</key>
+		<dict>
+			<key>from</key>
+			<string>C936AFEE-ECFB-406D-8EFB-A6817562D555 - C936AFEE-ECFB-406D-8EFB-A6817562D555</string>
+			<key>to</key>
+			<string>51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7 - 51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7</string>
+		</dict>
+		<key>717F1E82-5E45-4954-AFD3-E2D552B6D3B6</key>
+		<dict>
+			<key>from</key>
+			<string>51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7 - 51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7</string>
+			<key>to</key>
+			<string>C04D84D6-18D4-4A29-8090-1DE10CB0132B - C04D84D6-18D4-4A29-8090-1DE10CB0132B</string>
+		</dict>
+		<key>91B1E90F-B643-4690-9084-E7F662F687D5</key>
 		<dict>
 			<key>from</key>
 			<string>1E8EF5DB-5378-4160-98EF-660F89373A85 - 1E8EF5DB-5378-4160-98EF-660F89373A85</string>
 			<key>to</key>
 			<string>709FE5CB-C4FE-4DC1-AC34-46EE1CE9BD63 - 709FE5CB-C4FE-4DC1-AC34-46EE1CE9BD63</string>
 		</dict>
-		<key>34E0D38D-90B7-4C65-AE23-2338DD90F893</key>
+		<key>A0AD2C22-B3A6-456D-BD2C-099A520A467F</key>
 		<dict>
 			<key>from</key>
 			<string>FD858ACD-27EE-4B0A-AC42-15C8B2B83724 - FD858ACD-27EE-4B0A-AC42-15C8B2B83724</string>
 			<key>to</key>
 			<string>FA1F63D5-F57F-4226-A86E-C38ECE62C3EE - FA1F63D5-F57F-4226-A86E-C38ECE62C3EE</string>
 		</dict>
-		<key>5225A371-55B5-4217-ADA4-7DD6AF4C45B0</key>
-		<dict>
-			<key>from</key>
-			<string>8E444271-EE2E-4CAE-ADDC-F1E0D3F70029 - 8E444271-EE2E-4CAE-ADDC-F1E0D3F70029</string>
-			<key>to</key>
-			<string>160C0A5E-EA5B-494E-ACC2-D5CAE268EB0D - 160C0A5E-EA5B-494E-ACC2-D5CAE268EB0D</string>
-		</dict>
-		<key>773DB851-DAF2-4D7A-ADB6-60D00140F589</key>
-		<dict>
-			<key>from</key>
-			<string>709FE5CB-C4FE-4DC1-AC34-46EE1CE9BD63 - 709FE5CB-C4FE-4DC1-AC34-46EE1CE9BD63</string>
-			<key>to</key>
-			<string>8E444271-EE2E-4CAE-ADDC-F1E0D3F70029 - 8E444271-EE2E-4CAE-ADDC-F1E0D3F70029</string>
-		</dict>
-		<key>B1487392-57B9-4E8B-ADEF-7EE69B7FF950</key>
-		<dict>
-			<key>from</key>
-			<string>484E4DA3-12BE-401A-99F6-36750822E3B4 - 484E4DA3-12BE-401A-99F6-36750822E3B4</string>
-			<key>to</key>
-			<string>51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7 - 51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7</string>
-		</dict>
-		<key>B47D7D9B-7E41-4714-8422-312E6C68B330</key>
-		<dict>
-			<key>from</key>
-			<string>51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7 - 51DDC0C4-EBD5-465B-AAA5-CCE5F95D70A7</string>
-			<key>to</key>
-			<string>C04D84D6-18D4-4A29-8090-1DE10CB0132B - C04D84D6-18D4-4A29-8090-1DE10CB0132B</string>
-		</dict>
-		<key>D550A95A-9C5F-4644-B735-19177C521440</key>
-		<dict>
-			<key>from</key>
-			<string>FA1F63D5-F57F-4226-A86E-C38ECE62C3EE - FA1F63D5-F57F-4226-A86E-C38ECE62C3EE</string>
-			<key>to</key>
-			<string>99CCCC34-5D03-4838-A427-4EA0FF81E07F - 99CCCC34-5D03-4838-A427-4EA0FF81E07F</string>
-		</dict>
-		<key>F9680E3D-D3F8-4D5F-8113-2DB33DC5203B</key>
-		<dict>
-			<key>from</key>
-			<string>160C0A5E-EA5B-494E-ACC2-D5CAE268EB0D - 160C0A5E-EA5B-494E-ACC2-D5CAE268EB0D</string>
-		</dict>
-		<key>FB66487B-61DF-4FB2-8FD1-85E16FD040E0</key>
+		<key>B3E06E59-0545-4FB3-BB78-4A1FEE433A71</key>
 		<dict>
 			<key>from</key>
 			<string>D88218A8-6BBD-4DD8-BBC2-46F01CA40E02 - D88218A8-6BBD-4DD8-BBC2-46F01CA40E02</string>
 			<key>to</key>
 			<string>1E8EF5DB-5378-4160-98EF-660F89373A85 - 1E8EF5DB-5378-4160-98EF-660F89373A85</string>
+		</dict>
+		<key>D1D3CB57-BAC7-4EBA-A46C-4D4680975B23</key>
+		<dict>
+			<key>from</key>
+			<string>FA1F63D5-F57F-4226-A86E-C38ECE62C3EE - FA1F63D5-F57F-4226-A86E-C38ECE62C3EE</string>
+			<key>to</key>
+			<string>99CCCC34-5D03-4838-A427-4EA0FF81E07F - 99CCCC34-5D03-4838-A427-4EA0FF81E07F</string>
 		</dict>
 	</dict>
 	<key>state</key>
@@ -1340,7 +1336,7 @@
 			<key>name</key>
 			<string>output_path</string>
 			<key>value</key>
-			<string>/Volumes/Development/APSL/10.6.1</string>
+			<string>/Volumes/APSL Source/10.7</string>
 		</dict>
 		<dict>
 			<key>UUID</key>
